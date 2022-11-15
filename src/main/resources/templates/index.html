@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Doctor Sign In</title>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <nav>
-        <span>Doctor Secret Service</span>
-        <a href="/">Sign In</a>
-    </nav>
+<header th:replace="header.html :: top">
+    My Header
 </header>
 <ul class="doctor-list">
     <li><a href="/doctor/?number=1&name=William%20Hartnell">Doctor 1</a></li>
